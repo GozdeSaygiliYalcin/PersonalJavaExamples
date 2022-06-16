@@ -1,6 +1,5 @@
 package com.github.hackerrank;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class InterfaceExample {
@@ -10,18 +9,14 @@ public class InterfaceExample {
 		public int divisorSum(int n);
 	}
 	
-	class MyCalculator implements AdvancedArithmetic {
+	static class MyCalculator implements AdvancedArithmetic {
 		
-		static int sum = 0;
-		static int askNumber;
+		int sum = 0;
 		
 		public int divisorSum(int n) {
-				       
-			Scanner input = new Scanner(System.in);
-			askNumber = input.nextInt();
-			
-			for (int i = 0; i <= askNumber; i++) {
-				if(askNumber % i == 0) {
+				      
+			for (int i = 1; i <= n; i++) {
+				if(n % i == 0) {
 				 sum = sum+i;
 				}
 			}
@@ -31,12 +26,15 @@ public class InterfaceExample {
 
 	public static void main(String[] args) {
 	
-//      MyCalculator n1 = new MyCalculator();
-//      n1.divisorSum(askNumber);
-//    
+		int askNumber;
+		Scanner input = new Scanner(System.in);
+		askNumber = input.nextInt();
 		
-				
-
+		MyCalculator n1 = new MyCalculator();
+		
+		System.out.println("I implemented: AdvancedArithmetic");
+		System.out.println(n1.divisorSum(askNumber));
+   
 	}
 
 }
