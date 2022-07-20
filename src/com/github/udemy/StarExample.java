@@ -8,18 +8,18 @@ public class StarExample {
 		st.drawFillStar(5,5);
 		System.out.println();
 		st.drawVoidStar(5, 5);
-
+		st.drawVoidStar(4, 12);
+		
 	}
 	
 	public void drawFillStar(int row, int column) {
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
 				System.out.print("*");
-				if(j == column-1) {
+				if(j == column-1) { //kolonun sonuna gelince aşağı geçmesini sağlıyor
 					System.out.println();
 				}
 			}
-			
 		}
 	}
 	
