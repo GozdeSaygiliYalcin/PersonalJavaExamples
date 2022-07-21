@@ -27,6 +27,6 @@ public class PrimeNumber {
 			}
 		}
 		System.out.println(n + " is a prime number");
-		return prime ;
+		return prime;
 	}
 }
