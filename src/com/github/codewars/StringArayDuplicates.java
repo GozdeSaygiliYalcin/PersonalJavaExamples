@@ -25,9 +25,9 @@ public class StringArayDuplicates {
 	 
 	public static void main(String[] args) {
 		
-		String [] arr = {"gozde", "ali", "veli", "abcd"};
+		String [] arr = {"gozde", "aliiiii", "veli", "abcd"};
 		System.out.println(dup(arr));
-		System.out.println(arr.toString());
+		System.out.println(Arrays.toString(dup(arr)));
 	}
 
 }
