@@ -2,7 +2,7 @@ package com.github.hackerrank.thirtdayschallenge;
 
 import java.util.Scanner;
 
-public class SolutionDayOne {
+public class Day000 {
 
 	public static void main(String[] args) {
 		
@@ -10,6 +10,7 @@ public class SolutionDayOne {
 		Scanner inputString = new Scanner(System.in);
 		System.out.println(inputString.nextLine());
 		inputString.close();
+		
 
 	}
 
